@@ -10,7 +10,41 @@
     <p><a href="../index.html">Institucional</a></p>
     <h1>Registro de Candidatos</h1>
 
+    <!-- Grupo de campos
+    de formulário -->
+    <form action="" method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+        </p>
 
+        <p>
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" name="data" id="data">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input required type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="vaga">Escolha a vaga:</label>
+            <select required name="vaga" id="vaga">
+                <option value=""></option>
+                <option value="1">Analista de TI</option>
+                <option value="2">Dev. Front-End</option>
+                <option value="3">Dev. Back-End</option>
+            </select>
+        </p>
+
+        <button type="submit">Enviar</button>
+    </form>
 
 </body>
 </html>
