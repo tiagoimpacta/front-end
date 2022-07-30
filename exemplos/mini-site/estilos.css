@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: rgb(217, 221, 223); */
+    background-image: url(imagens/tarde.jpg);
+    
+    /* Imagem de plano de fundo "cubra" todo
+    o espaço disponível. Obs.: isso pode degradar
+    a qualidade de imagem em telas muito grande. */
+    background-size: cover;
+
+    /* Fixar/Prender a imagem ao fundo, ou seja,
+    ela não irá rolar junto com o conteúdo. */
+    background-attachment: fixed;
+}
+
+h1 { 
+    background: linear-gradient(to bottom, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+
+    color: white;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+
+    position: sticky;
+    top: 0;
+}
+
+/* Seletor tipo ID/IDENTIFICADO
+Restritivo, só pode ser usado em um elemento (id é algo único) */
+#container {
+    background-color: rgba(245, 245, 245, 0.945);
+    width: 80%; 
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Tornando as imagens flexíveis/responsivas */
+img { max-width: 100%; }
+
+/* Seletor tipo CLASSE
+(versátil, pode ser reaproveitado em 
+partes diferentes da mesma página) */
+.centralizar { text-align: center; }
+
+.borda-arredondada { border-radius: 5px; }
+.sombra-texto { text-shadow: black 2px 2px 5px; }
+.destaque { background-color: yellow; }
+
+h2 {
+    background-image: url(imagens/oriental-tiles.png);
+    color: white;
+    border-right: solid 20px black;
+    border-bottom: solid 5px black;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
