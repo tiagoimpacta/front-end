@@ -8,7 +8,7 @@
 - [Sections: seções do HTML5 – Parte 1](https://tableless.com.br/sections-html5/)
 - [Sections: elemento article – Parte 4](https://tableless.com.br/section-elemento-article/)
 
-- ## Oportunidades
+## Oportunidades
 - https://github.com/frontendbr/vagas 
 - https://github.com/backend-br/vagas
 - https://programathor.com.br/
