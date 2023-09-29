@@ -42,6 +42,40 @@ Front-End + Back-End
 - Não pode usar caracteres especiais
 
 
+## Tags de bloco de conteúdo
+
+- header: cabeçalho, topo
+- footer: rodapé, inferior
+- nav: menu de navegação principal
+- article: artigo, conteúdo de alta relevância, conteúdo autosuficiente
+- section: seção, conteúdo de relevância, ou uma subdivisão de conteúdo.
+- aside: conteúdo complementar, conteúdo auxiliar
+- main: grupo de outros blocos de conteúdo
+- div: genérica, sem significado
+
+
+
+## Sobre o CSS
+
+- Folhas de Estilos em Cascata
+- Linguagem de estilos: cores, alinhamentos, espaçamentos, dimensão, efeitos (sombra, gradiente, transformações, filtros), animações, design responsivo etc.
+
+### 3 formas de implementação
+
+- INLINE
+
+Aplicação do CSS diretamente em cada tag.
+
+- INTERNA/ONPAGE
+
+Aplicação de REGRAS CSS na página HTML, valendo para todos os elementos da própria página.
+
+- EXTERNA
+
+Cria regras CSS dentro de um arquivo .css e conecta este arquivo às páginas HTML.
+
+
+
 
 
 
