@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulário</title>
+</head>
+<body>
+    <h1>Outros elementos</h1>
+    <hr>
+<form action="" method="post">
+    <p>Deseja receber informativos? <br>
+        <input type="radio" name="informativos" id="sim">
+        <label for="sim">Sim</label>
+
+        <input type="radio" name="informativos" id="nao">
+        <label for="nao">Não</label>
+    </p>
+
+    <p>Escolha as linguagens de seu interesse: <br>
+        <input required type="checkbox" name="interesses" id="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="interesses" id="css">
+        <label for="css">CSS</label>
+        
+        <input type="checkbox" name="interesses" id="js">
+        <label for="js">JS</label>
+    </p>
+
+    <p>
+        <label for="mensagem">Mensagem:</label> <br>
+        <textarea name="mensagem" id="mensagem" cols="20" rows="5" maxlength="10"></textarea>
+    </p>
+
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
