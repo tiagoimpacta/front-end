@@ -62,17 +62,34 @@ Front-End + Back-End
 
 ### 3 formas de implementação
 
-- INLINE
+#### INLINE
+Aplicação do CSS diretamente em cada tag. Esta implementação é feita com o atributo style.
 
-Aplicação do CSS diretamente em cada tag.
+#### INTERNA/ONPAGE
+Aplicação de REGRAS CSS na página HTML, valendo para todos os elementos da própria página. Esta implementação é feita na seção <head> e com a tag <style>.
 
-- INTERNA/ONPAGE
+**Anatomia de uma regra CSS**
 
-Aplicação de REGRAS CSS na página HTML, valendo para todos os elementos da própria página.
+```css
+seletor { propriedade: valor; }
 
-- EXTERNA
+seletor {
+  propriedade1: valor;
+  propriedade2: valor;
+  propriedade3: valor;
+  ...
+}
+```
+**Tipos de seletor**
 
-Cria regras CSS dentro de um arquivo .css e conecta este arquivo às páginas HTML.
+- TAG
+- Classe
+- ID
+- Descendente
+
+#### EXTERNA
+
+Cria regras CSS dentro de um arquivo .css e conecta este arquivo às páginas HTML. A implementação também é feita no <head> usando uma tag <link> para vincular o HTML com o arquivo CSS.
 
 
 
