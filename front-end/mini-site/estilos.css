@@ -1,4 +1,108 @@
+/* Seletor UNIVERSAL */
+* { 
+    /* Alterando o comportamento do Box Model */
+    box-sizing: border-box;
+}
+
 /* Regras CSS */
 body {
-    background-color: aqua;
+    background-image: url(imagens/fundo04.png);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Seletor Classe */
+.centralizar { text-align: center; }
+
+.sombra-texto { text-shadow: black 1px 1px 3px; }
+
+.destaque { 
+    color: red; 
+    background-color: yellow;
+}
+
+
+/* Seletor ID/IDentificado */
+#container { 
+    background-color: rgba(255, 255, 255, 0.918);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: black 0 0 70px;
+}
+
+/* Tornando as imagens flexíveis */
+img { max-width: 100%; }
+
+h1 {
+    text-align: center;
+    background: linear-gradient(to right, black, darkblue);
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Exercícios 
+1) Crie uma regra para os elementos h2 com as seguintes características:
+
+-Imagem de plano de fundo: fundo 03 ou fundo 05
+-Cor do texto de acordo com a imagem de fundo
+-Espaçamento interno de 15px APENAS para o lado esquerdo 
+-Borda direita (estilo, cor e tamanho à sua escolha)
+-Borda inferior (estilo, cor e tamanho à sua escolha) */
+h2 {
+    background-image: url(imagens/fundo05.png);
+    color: darkblue;
+    padding-left: 15px;
+    border-right: solid 20px;
+    border-bottom: solid 5px;
+}
+
+/* 2) Crie uma regra (tag? classe? id?) com as seguintes características:
+
+-Negrito (pesquise como fazer negrito no CSS)
+-Itálico (pesquise como fazer itálico no CSS)
+-Borda em todas direções (estilo, cor, tamanho à sua escolha)
+-Espaçamento interno de 4px
+
+Em seguida, aplique esta regra no "2023" contido no último parágrafo e na palavra "contato" do penúltimo parágrafo. */
+.exercicio {
+    font-weight: bold;
+    font-style: italic;
+    border: solid 2px red;
+    padding: 4px;
+}
+
+
+/* Regras para o menu de navegação */
+
+nav { text-align: center; }
+
+/* Seletor Descendente */
+
+/* Regra de estado inicial do link */
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+    width: 50%;
+    transition: 3s;
+}
+
+/* Regra de acionamento
+Pseudo-classe -> :hover (mouse)
+Pseudo-classe -> :focus (teclado) */
+nav a:hover, nav a:focus {
+    background-color: darkblue;
+    /* transform: translateY(10px) rotate(180deg); */
+}
+
+
+
+
+

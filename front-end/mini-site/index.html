@@ -6,31 +6,33 @@
 <title>Site Exemplo</title>
 
 <!-- Importando o arquivo externo de estilos CSS -->
-
+<link rel="stylesheet" href="estilos.css">
 
 </head>
 <body>
 
-
+<div id="container">
     <h1>Impacta Web</h1>
-
-    <nav>
-		<a href="index.html">Início</a>
-		<a href="front-end.html">Front-End</a>
-	</nav>
-
-    <h2>Introdução</h2>
     
-    <img src="imagens/destaque.jpg" alt="">    
+    <nav><a href="index.html">Início</a><a href="front-end.html">Front-End</a></nav>
+
+    <h2 class="centralizar">Introdução</h2>
+    
+    <div class="centralizar">
+        <img src="imagens/destaque.jpg" alt="">    
+    </div>
   
-	<p>Desenvolvimento web é o termo utilizado para descrever o desenvolvimento de sites, na Internet ou numa <b>intranet</b>. Este é o profissional que trabalha desenvolvendo websites, podendo ser um Web Designer (Desenvolvedor do Layout), ou Web Developer(Desenvolvedor de sistemas). </p>
+	<p class="centralizar">Desenvolvimento web é o termo utilizado para descrever o desenvolvimento de sites, na Internet ou numa 
+    <b class="destaque">intranet</b>. Este é o profissional que trabalha desenvolvendo 
+    <span class="destaque">websites</span>, podendo ser um Web Designer (Desenvolvedor do Layout), ou Web Developer(Desenvolvedor de sistemas). </p>
 	<p>O desenvolvimento refere-se a um processo de construção e testes do software especifico para a web, com a finalidade de se obter um conjunto de programas, que satisfazem as funções pretendidas, quer em termos de usabilidade dos usuários ou compatibilidade com outros programas existentes. O desenvolvimento web pode variar desde simples páginas estáticas a aplicações ricas, comércios eletrônicos ou redes sociais.</p>	
     
     <h2>Editores</h2>
     <ol>
-        <li>Notepad++</li>
+        <li class="sombra-texto">Notepad++</li>
         <li>Visual Studio Code</li>
-        <li>Sublime Text</li>
+        <li class="sombra-texto destaque">
+        Sublime Text</li>
     </ol>
 
     <h2>Referências</h2>
@@ -40,7 +42,8 @@
         <li><a href="http://www.maujor.com" target="_blank">Maujor</a></li>
     </ul>
 
-    <p>Entre em contato pelo e-mail 
+    <p>Entre em 
+        <span class="exercicio">contato</span>  pelo e-mail 
         <a href="mailto:email@provedor.com.br">
             email@provedor.com.br
         </a>
@@ -50,8 +53,9 @@
     </p>
 
 
-    <p>Todos os direitos reservados - 2023 </p>
-
+    <p>Todos os direitos reservados - 
+        <span class="exercicio">2023</span> </p>
+</div>
 
 </body>
 </html>
