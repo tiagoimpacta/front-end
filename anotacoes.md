@@ -82,15 +82,24 @@ seletor {
 ```
 **Tipos de seletor**
 
-- TAG
-- Classe
-- ID
-- Descendente
+- TAG: acessa/formata todas as tags indicadas
+- Classe: acessa/formata somente tags em que a classe foi aplicada
+- ID: acessa/formata somente uma tag em que o id foi aplicado
+- Descendente: acessa/formata elementos que estão dentro de outro elemento.
+- Pseudo-classes: recursos adicionais para os seletores (ex: hover para passar o mouse)
+- Grupo de seletores: diversos seletores com uma mesma formatação.
 
 #### EXTERNA
 
 Cria regras CSS dentro de um arquivo .css e conecta este arquivo às páginas HTML. A implementação também é feita no <head> usando uma tag <link> para vincular o HTML com o arquivo CSS.
 
+**Elementos BLOCO/BLOCK**
+
+h1 a h6, p, ul/ol, li, div, article, section, header, footer, main, aside, hr
+
+ **Elementos EM LINHA/INLINE**
+
+img, a, b, i, u, span
 
 
 
