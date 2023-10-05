@@ -35,7 +35,19 @@ body {
 /* Tornando as imagens flexíveis */
 img { max-width: 100%; }
 
+@keyframes animaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to { opacity: 1; }
+}
+
 h1 {
+    animation-name: animaTitulo;
+    animation-duration: 1s;
+
     text-align: center;
     background: linear-gradient(to right, black, darkblue);
     color: white;
@@ -102,6 +114,82 @@ nav a:hover, nav a:focus {
     /* transform: translateY(10px) rotate(180deg); */
 }
 
+
+/* Seletor descendente */
+figure img {
+    filter: grayscale(100%);
+    transition: 0.5s;
+    /* transform: scale(0.95); */
+}
+
+figure img:hover { 
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+
+figure {
+    margin: 0;
+    text-align: center;
+    max-width: 419px;
+    margin: auto;
+
+    /* Controla o que acontece
+    com o conteúdo que "transbordar"
+    os limites do figure. Neste
+    caso, esconde as "sobras". */
+    overflow: hidden;
+
+    /* Ao declarar a propriedade/valor
+    abaixo, indicamos que a referência
+    de posicionamento será o figure. */
+    position: relative;
+}
+
+figcaption {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* Ao declarar a propriedade abaixo,
+    passa a ser possível posicionar
+    o figcaption usando coordenadas
+    cuja referência é o figure. */
+    position: absolute;
+
+    /* Propriedades de coordenadas:
+    left, top, right, bottom */
+    left: 0; 
+    right: 0;
+    bottom: 30px;
+}
+
+/* Criando animações */
+
+/* Etapa 1: regra de animação. */
+@keyframes mudaCor {
+    /* Dê/Como começa */
+    /* from { background-color: yellow; } */
+
+    /* Para/Como termina */
+    /* to { background-color: red; } */
+    0% { background-color: yellow; }
+    25% { background-color: red; }
+    40% { background-color: green; }
+    75% { background-color: purple; }
+    100% { background-color: lightblue; }
+}
+
+/* Etapa 2: aplicar a regra de animação
+em algum elemento. */
+b {
+    animation-name: mudaCor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 
 
