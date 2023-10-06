@@ -30,3 +30,12 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+/* Regra usando seletor ID */
+#imagem-decorativa { 
+    height: 400px;
+    background-image: url(../imagens/teclado.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
