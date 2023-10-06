@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Flexbox</title>
+<style>
+    * { box-sizing: border-box; }
+
+    #exemplo {
+        border: solid 2px red;
+        width: 85%;
+        margin: auto;
+        height: 200px;
+
+        /* Ativando o Flexbox */
+        display: flex;
+        flex-direction: row; /* padrão */
+        justify-content: space-evenly;
+        align-items: center;   
+    }
+
+    .caixa {
+        border: solid 1px;
+        width: 80px;
+        height: 50px;
+    }
+
+    #um { background-color: green; }
+    #dois { background-color: yellow; }
+    #tres { background-color: purple; }
+
+</style>
+</head>
+<body>
+    <h1>Alinhamento de elementos usando Flexbox</h1>
+    <hr>
+    <p>Flexbox é um mecanismo do CSS3 que permite aplicar alinhamentos, espaçamentos e distribuição de elementos/conteúdo no HTML facilmente.</p>
+
+    <h2>Exemplo</h2>
+
+    <div id="exemplo">
+        <div id="um" class="caixa">UM</div>
+        <div id="dois" class="caixa">DOIS</div>
+        <div id="tres" class="caixa">TRÊS</div>
+    </div>
+
+</body>
+</html>

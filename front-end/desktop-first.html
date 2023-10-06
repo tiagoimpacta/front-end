@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Desktop First</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Verdana;
+            background-color: #3636f1;
+        }
+
+        h1, h2 { text-align: center; }
+        h1 { font-family: Georgia; }
+        h2 { text-transform: uppercase; }
+
+        h1 { font-size: 40px; }
+        h2 { font-size: 36px; }
+        p { font-size: 20px; }
+
+        /* Regras Condicionais (Media Queries) */
+        @media screen and (max-width: 675px) {
+            h1 { font-size: 36px; }
+            h2 { font-size: 30px; }
+            p { font-size: 16px; }
+        }
+
+        @media screen and (max-width: 575px) {
+            body { background-color: lightblue; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Design Responsivo</h1>
+    <hr>
+    
+    <p>Conjunto de técnicas de desenvolvimento front-end visando a construção de sites que funcionem corretamente em dispositivos com telas de tamanhos diferentes.</p>
+    <h2>Desktop First</h2>
+    <p>Desenvolver o layout/site pensando primeiro em telas grandes (computadores etc).</p>
+    <p>Em resumo: do grande para o pequeno.</p>
+</body>
+</html>

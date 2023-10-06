@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Mobile First</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Verdana;
+            background-color: lightblue;
+        }
+
+        h1 { font-family: Georgia; }
+
+        h2 { text-transform: uppercase; }
+
+        /* Regras Condicionais (Media Queries) */
+        @media screen and (min-width: 520px){
+            h1, h2 { text-align: center; }
+        }
+
+        @media screen and (min-width: 716px){
+            h1 { font-size: 40px; }
+            h2 { font-size: 36px; }
+            p { font-size: 20px; }
+            body { background-color: #3636f1; }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Design Responsivo</h1>
+    <hr>
+    
+    <p>Conjunto de técnicas de desenvolvimento front-end visando a construção de sites que funcionem corretamente em dispositivos com telas de tamanhos diferentes.</p>
+    <h2>Mobile First</h2>
+    <p>Desenvolver o layout/site pensando primeiro em dispositivos móveis.</p>
+    <p>Em resumo: do pequeno para o grande.</p>
+</body>
+</html>
