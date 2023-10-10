@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Sintaxe</title>
+</head>
+<body>
+
+<h1>Sintaxe Geral do JS</h1>
+<hr>
+
+<script>
+/* Habilitando o modo estrito da linguagem */
+'use strict'; // flag
+
+
+/* SHIFT ALT A
+bloco de comentários,
+podendo ter várias linhas */
+
+// Comentário de linha
+
+// Função/comando de saída de dados
+console.log("Hello World!");
+console.log("Belezaaaa");
+
+/* Tipos de dados mais comuns
+string -> textos em geral, sempre entre aspas ou crases
+
+numéricos -> inteiro, decimal 
+
+lógico -> booleano (true ou false) 
+
+vetor/matriz -> arrays (lista de dados indexados)
+
+objetos -> lista de dados não-indexados */
+
+/* Variáveis e constantes 
+var -> variável global (descontinuada)
+let -> variável de escopo global ou de bloco (moderna)
+const -> constante de escopo global ou de bloco (moderna) */
+
+const escola = "Impacta";
+let curso = "Desenvolvimento Front-End";
+
+console.log(escola);
+console.log(curso);
+console.log(escola, curso);
+
+let ano = 2023; // inteiro
+let preco = 1597.55; // decimal
+let quantidade = 3;
+let total = preco * quantidade;
+console.log(total);
+
+
+// const ano de fabricação = 1983; // INVÁLIDO
+const anoDeFabricacao = 1983;
+const ano_de_fabricacao = 1983;
+const anodefabricacao = 1983;
+
+let exemplo = 'Aprendendo JS';
+console.log(exemplo);
+
+// let estiloMusical = "Rock 'n' Roll";
+let estiloMusical = 'Rock \'n\' Roll';
+
+console.log(estiloMusical);
+
+
+/* Saída de dados personalizada, combinando
+dados dinâmicos e estáticos */
+
+/* Estamos na Impacta fazendo o curso de Desenvolvimento Front-End. */
+
+// Forma moderna: template string/literal
+console.log(
+`Estamos na ${escola} fazendo o curso de ${curso}.`
+);
+
+let backEnd = `Área de sistemas web`;
+console.log(backEnd);
+
+// Forma tradicional: concatenação
+console.log(
+"Estamos na "+escola+" fazendo o curso de "+curso+"."
+);
+
+let comida = "Lasanha";
+console.log(comida);
+
+let publica = "Qualquer coisa";
+let evall = "Outra coisa";
+// console.log(public);
+// console.log(eval);
+
+
+
+
+
+</script>
+
+</body>
+</html>
