@@ -102,7 +102,15 @@ h1 a h6, p, ul/ol, li, div, article, section, header, footer, main, aside, hr
 img, a, b, i, u, span
 
 
+## Conceitos Gerais sobre JavaScript
 
+- Linguagem de programação para a Web
+- É possível criar sites, aplicativos móveis, programas (PC) e games.
+- JavaScript NÃO É Java!
+- JavaScript = JS
+- JS "roda/executa" no navegador (Front-End)
+- JS "roda/executa" no servidor (Back-End) através do Node.js (plataforma de execução JS)
+- JS é uma linguagem com tipagem (tipos de dados) dinâmica
 
 
 
