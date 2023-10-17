@@ -76,6 +76,41 @@ for( let i = 0; i < qtdClientes; i++ ){
 /* Loops exclusivo do JS */
 
 // for/of para arrays
+const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+/* Para "mes" de "meses" */
+for( let mes of meses ){
+    console.log(mes);
+}
 
 // for/in para objetos
+let pessoa = {
+    nome: "Fulano",
+    sobrenome: "da Silva",
+    nascimento: "20/10/2000",
+    cidade: "São Paulo",
+    telefones: ["11-222-333", "11-966-555"]
+};
+
+for(let dados in pessoa){
+    if(dados === "telefones"){
+        for(let telefone of pessoa[dados]){
+            console.log(telefone);
+        }
+    } else {
+        console.log(pessoa[dados]);
+    }
+}
+
+
+/* Para "dados" dentro de "pessoa" */
+// for(let dados in pessoa){
+//     // Exibir SOMENTE a referência da propriedade
+//     //console.log(dados);
+
+//     // Exibir os VALORES de cada propriedade
+//     console.log(pessoa[dados]);
+// }
+
+
 
