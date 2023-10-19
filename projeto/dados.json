@@ -1,0 +1,38 @@
+{
+    "vagas": [
+        {
+            "id": 1,
+            "titulo": "Programador PHP"
+        },
+        {
+            "id": 2,
+            "titulo": "Dev. Front-End"
+        },
+        {
+            "id": 3,
+            "titulo": "Dev. Back-End"
+        },
+        {
+            "id": 4,
+            "titulo": "UX/UI Designer"
+        }
+    ],
+    "candidatos": [
+        {
+            "nome": "Kevin Lima",
+            "nascimento": "2000-06-30",
+            "telefone": "11-2134-0000",
+            "email": "kevin@gmail.com",
+            "vaga": "Dev. Front-End",
+            "id": 1
+        },
+        {
+            "nome": "Felipe Musk",
+            "nascimento": "2010-10-09",
+            "telefone": "11-3333-4444",
+            "email": "felipe@tesla.com",
+            "vaga": "UX/UI Designer",
+            "id": 2
+        }
+    ]
+}
